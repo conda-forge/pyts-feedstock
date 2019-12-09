@@ -1,5 +1,5 @@
 {% set name = "pyts" %}
-{% set version = "0.9.0" %}
+{% set version = "0.10.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0dbf6db98a16117ddc2cf23df0dab51dddab4413229a7ec39c3b1b3bbdc13214
+  sha256: f08c7a82c705d43a21a1725e29ba16728caa5db68ed8471adfa22fba395850e4
 
 build:
   noarch: python
