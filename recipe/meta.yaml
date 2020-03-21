@@ -1,5 +1,5 @@
 {% set name = "pyts" %}
-{% set version = "0.10.0" %}
+{% set version = "0.11.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: f08c7a82c705d43a21a1725e29ba16728caa5db68ed8471adfa22fba395850e4
+  sha256: 4b9cc6266f3673c88b339047544dbf3412522e95bbe7e68d026300609149f3a7
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -31,7 +31,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.txt
-  summary: 'A Python package for time series classification'
+  summary: A Python package for time series classification
 
   description: |
     pyts is a Python package for time series transformation and classification.
