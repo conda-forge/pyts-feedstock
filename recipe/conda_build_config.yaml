@@ -1,0 +1,7 @@
+# pyts 0.14.0 raises its floor to Python >=3.11 (dropping 3.8-3.10, all past
+# end-of-life), which is below conda-forge's current shared python_min pin
+# of 3.10 (see conda-forge-pinning-feedstock's conda_build_config.yaml).
+# Without this override, the build would try to run under Python 3.10 and
+# fail pip's own Requires-Python check.
+python_min:
+  - '3.11'
