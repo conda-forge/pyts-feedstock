@@ -1,5 +1,5 @@
 {% set name = "pyts" %}
-{% set version = "0.14.0" %}
+{% set version = "0.14.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c0c64ea62bc7e336a9ce1d61fc34182593b3c164662550c600f179d591798343
+  sha256: 55df4fdcad5df6b1a2ca66572c1e851ac3e4688168bb5d665e915e10023cbfdc
 
 build:
   noarch: python
